@@ -8,6 +8,7 @@ ThemeData light = ThemeData(
       headlineLarge :TextStyle(color: Colors.white,fontWeight: FontWeight.w700,),
       titleMedium :TextStyle(color: Colors.white,fontWeight: FontWeight.w500,),
       labelMedium :TextStyle(color: Colors.white,fontWeight: FontWeight.w500,),
-      labelSmall :TextStyle(color: Colors.white,fontWeight: FontWeight.w400,)
+      labelSmall :TextStyle(color: Colors.white,fontWeight: FontWeight.w400,),
+    bodyMedium :TextStyle(color: Colors.grey,fontWeight: FontWeight.w500,)
   )
 );
