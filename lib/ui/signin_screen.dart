@@ -79,7 +79,7 @@ class SignInScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                           ))),
                       child: Text(
-                        "Verify Number",
+                        "Continue",
                         style: Theme.of(context).textTheme.labelLarge,
                       )),
                 ),
