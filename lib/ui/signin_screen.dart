@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/generated/assets.dart';
 import 'package:grocery_app/style/color.dart';
 import 'package:grocery_app/style/strings.dart';
+import 'package:grocery_app/ui/verify_number_screen.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -65,7 +66,10 @@ class SignInScreen extends StatelessWidget {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => VerifyNumberScreen()));
+                      },
                       style: ButtonStyle(
                           backgroundColor:
                               MaterialStateProperty.all(primaryColor),
