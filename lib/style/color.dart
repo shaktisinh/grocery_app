@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 
 int _primaryColor = 0XFF53B175;
 Color primaryColor =  Color(_primaryColor);
+Color secondaryColor =  const Color(0XFFF3603F);
+Color whiteColor = const  Color(0XFFFFFFFF);
+Color dividerColor = const  Color(0XFFE2E2E2);
+Color googleColor = const  Color(0XFF5383EC);
+Color facebookColor = const  Color(0XFF4A66AC);
 
 
  MaterialColor primarySwatch = MaterialColor(

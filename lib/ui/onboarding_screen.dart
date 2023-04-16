@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:grocery_app/generated/assets.dart';
 import 'package:grocery_app/style/color.dart';
+import 'package:grocery_app/style/strings.dart';
+import 'package:grocery_app/ui/signin_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   @override
@@ -38,7 +40,7 @@ class OnboardingScreen extends StatelessWidget {
                     height: 3,
                   ),
                   Text(
-                    "get your groceries in 30 minutes",
+                    "Get your groceries in 30 minutes",
                     style: Theme.of(context).textTheme.bodyMedium,
                     textAlign: TextAlign.center,
                   ),
@@ -51,7 +53,10 @@ class OnboardingScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 60.0),
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => SignInScreen()));
+                          },
                           style: ButtonStyle(
                               backgroundColor:
                                   MaterialStateProperty.all(primaryColor),
@@ -61,8 +66,8 @@ class OnboardingScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ))),
                           child: Text(
-                            "Get Started",
-                            style: Theme.of(context).textTheme.labelMedium,
+                            getStarted,
+                            style: Theme.of(context).textTheme.labelLarge,
                           )),
                     ),
                   ),

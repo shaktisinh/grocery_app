@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/generated/assets.dart';
 import 'package:grocery_app/style/color.dart';
+import 'package:grocery_app/style/strings.dart';
 import 'package:grocery_app/ui/onboarding_screen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -32,11 +33,11 @@ class SplashScreen extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Hatanu",
+                      appName,
                       style: Theme.of(context).textTheme.headlineLarge,
                     ),
                     Text(
-                      " online grocery store",
+                      " $tagLine",
                       style: Theme.of(context).textTheme.labelMedium,
                     )
                   ],
