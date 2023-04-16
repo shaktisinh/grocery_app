@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/style/color.dart';
+import 'package:grocery_app/ui/location_screen.dart';
 import 'package:grocery_app/widgets/appbar.dart';
 import 'package:grocery_app/widgets/background.dart';
 
@@ -56,8 +57,8 @@ class VerifyNumberScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) => VerifyNumberScreen()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => const LocationScreen()));
                       },
                       style: ButtonStyle(
                           backgroundColor:
