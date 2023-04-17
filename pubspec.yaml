@@ -12,11 +12,26 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.5
+  flutter_native_splash: ^2.2.19
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color: "#53B175"
+  image: assets/images/logo.svg
+  color_dark: "#53B175"
+  image_dark: assets/images/logo.svg
+
+  android_12:
+    image: assets/images/logo.svg
+    icon_background_color: "#53B175"
+    image_dark: assets/images/logo.svg
+    icon_background_color_dark: "#53B175"
+
+  web: false
 
 flutter:
   uses-material-design: true
