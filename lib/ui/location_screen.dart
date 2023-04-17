@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/generated/assets.dart';
 import 'package:grocery_app/style/color.dart';
+import 'package:grocery_app/ui/dashboard_screen.dart';
 import 'package:grocery_app/widgets/appbar.dart';
 import 'package:grocery_app/widgets/background.dart';
 
@@ -111,8 +112,8 @@ class LocationScreen extends StatelessWidget {
                     height: 50,
                     child: ElevatedButton(
                         onPressed: () {
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (context) => const LocationScreen()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) =>  DashboardScreen()));
                         },
                         style: ButtonStyle(
                             backgroundColor:
