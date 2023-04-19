@@ -10,6 +10,7 @@ Color grayDarkColor = const  Color(0XFF4C4F4D);
 Color dividerColor = const  Color(0XFFE2E2E2);
 Color googleColor = const  Color(0XFF5383EC);
 Color facebookColor = const  Color(0XFF4A66AC);
+Color gray= const  Color(0XFFF2F3F2);
 
 
  MaterialColor primarySwatch = MaterialColor(
